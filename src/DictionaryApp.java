@@ -11,6 +11,7 @@ public class DictionaryApp {
             Scanner inputFile = new Scanner(inputFileReader);
             CreateDictionary dictionary = new CreateDictionary();
             dictionary.WriteDictionaryToFile(inputFile);
+            dictionary.WriteWordCount(inputFile);
         }
         catch (Exception ex) {
             ex.printStackTrace();
